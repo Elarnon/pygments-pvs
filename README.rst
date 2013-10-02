@@ -10,6 +10,7 @@ should use it automatically.
 
 You can then use the ``pvs`` lexer with `Pygments`_:
 
+.. code-block:: bash
     $ pygmentize -l pvs mytheory.pvs
 
 .. _PVS: http://pvs.csl.sri.com/
@@ -27,16 +28,19 @@ remove the ``--user`` flag and start the command as root (using ``su`` or
 
 Installing from the PyPI repository:
 
+.. code-block:: bash
     $ pip install pygments-pvs --user
 
 Installing directly from the git:
 
+.. code-block:: bash
     $ git clone git://github.com/Elarnon/pygments-pvs.git
     $ cd pygments-pvs
     $ pip install . --user
 
 To verify the installation, run
 
+.. code-block:: bash
     $ pygmentize -L lexer | grep -i pvs
     * pvs:
         PVS (filenames *.pvs)
