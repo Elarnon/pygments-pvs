@@ -2,6 +2,7 @@
 Pygments PVS
 ************
 
+========
 Overview
 ========
 
@@ -12,11 +13,13 @@ should use it automatically.
 You can then use the ``pvs`` lexer with `Pygments`_:
 
 .. code-block:: bash
+
     $ pygmentize -l pvs mytheory.pvs
 
 .. _PVS: http://pvs.csl.sri.com/
 .. _Pygments: http://pygments.org/docs/
 
+============
 Installation
 ============
 
@@ -30,11 +33,13 @@ remove the ``--user`` flag and start the command as root (using ``su`` or
 Installing from the PyPI repository:
 
 .. code-block:: bash
+
     $ pip install pygments-pvs --user
 
 Installing directly from the git:
 
 .. code-block:: bash
+
     $ git clone git://github.com/Elarnon/pygments-pvs.git
     $ cd pygments-pvs
     $ pip install . --user
@@ -42,10 +47,12 @@ Installing directly from the git:
 To verify the installation, run
 
 .. code-block:: bash
+
     $ pygmentize -L lexer | grep -i pvs
     * pvs:
         PVS (filenames *.pvs)
 
+========================
 Using in LaTeX documents
 ========================
 
