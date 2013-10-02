@@ -1,25 +1,30 @@
+#!/usr/bin/python
+
 from setuptools import setup, find_packages
-
-version = '0.1'
-
 setup(
     name = 'pygments-pvs',
-    version = version,
+    version = '0.1',
     description = 'Pygments lexer for PVS source files',
-    long_description = open('README.txt').read() + '\n' +
-    open('CHANGES.txt').read(),
-    # TODO classifiers = [
-    # TODO keywords =
+    long_description = open('README.txt').read(),
+    license = 'MIT',
     author = 'Basile Clement',
     author_email = 'basile@clement.pm',
-    # TODO url
-    # TODO license
-    py_modules = ['lexer'],
+    packages = find_packages(),
     zip_safe = True,
     install_requires = [
-        'setuptools'
+        'pygments'
     ],
     entry_points = {
-        'pygments.lexer': 'pvs=lexer:PVSLexer',
+        'pygments.lexers': 'pvs=pygments_pvs:PVSLexer',
     },
+    classifiers = [
+        'Development Status :: 3 - Alpha',
+        'Environment :: Plugins',
+        'License :: OSI Approved :: MIT License',
+        'Programming Language :: Python',
+        'Programming Language :: Python :: 2',
+        'Operating System :: OS Independent',
+        'Intended Audience :: Developers',
+        'Topic :: Software Development :: Libraries :: Python Modules',
+    ],
 )
