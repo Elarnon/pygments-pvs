@@ -4,16 +4,16 @@ Pygments PVS
 Overview
 --------
 
-This packages provides a Pygments lexer for the PVS language. The
-lexer is published as an entry point - once installed, Pygments should
-use it automatically.
+This packages provides a `Pygments`_ lexer for the `PVS`_ language. The
+lexer is published as an entry point - once installed, `Pygments`_
+should use it automatically.
 
-You can then use the ``pvs`` lexer with Pygments:
+You can then use the ``pvs`` lexer with `Pygments`_:
 
     $ pygmentize -l pvs mytheory.pvs
 
-.. More about PVS: http://pvs.csl.sri.com/
-.. Pygments documentation: http://pygments.org/docs/
+.. _PVS: http://pvs.csl.sri.com/
+.. _Pygments: http://pygments.org/docs/
 
 Installation
 ------------
@@ -22,8 +22,8 @@ The preferred way to install pygments-pvs is by using pip. This can be
 done by installing pygments-pvs from the PyPI repository, or directly
 from the source. In both case, the commands install pygments-pvs for
 the local user only - if you want to install it system-wide, simply
-remove the `--user` flag and start the command as root (using `su` or
-`sudo`).
+remove the ``--user`` flag and start the command as root (using ``su`` or
+``sudo``).
 
 Installing from the PyPI repository:
 
