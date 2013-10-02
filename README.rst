@@ -36,7 +36,7 @@ Installing from the PyPI repository:
 
     $ pip install pygments-pvs --user
 
-Installing directly from the git:
+Installing directly from GitHub:
 
 .. code-block:: bash
 
