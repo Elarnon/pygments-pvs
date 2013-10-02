@@ -5,7 +5,7 @@ setup(
     name = 'pygments-pvs',
     version = '0.1',
     description = 'Pygments lexer for PVS source files',
-    long_description = open('README.md').read(),
+    long_description = open('README.rst').read(),
     license = 'MIT',
     author = 'Basile Clement',
     author_email = 'basile@clement.pm',
