@@ -1,9 +1,8 @@
-============
 Pygments PVS
 ============
 
 Overview
-========
+--------
 
 This packages provides a Pygments lexer for the PVS language. The
 lexer is published as an entry point - once installed, Pygments should
@@ -17,7 +16,7 @@ You can then use the ``pvs`` lexer with Pygments:
 .. Pygments documentation: http://pygments.org/docs/
 
 Installation
-============
+------------
 
 The preferred way to install pygments-pvs is by using pip.
 
@@ -42,6 +41,6 @@ To verify the installation, run
         PVS (filenames *.pvs)
 
 Using in LaTeX documents
-========================
+------------------------
 
 See the minted package at http://minted.googlecode.com
