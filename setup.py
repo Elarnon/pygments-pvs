@@ -9,6 +9,7 @@ setup(
     license = 'MIT',
     author = 'Basile Clement',
     author_email = 'basile@clement.pm',
+    url = 'https://github.com/Elarnon/pygments-pvs',
     packages = find_packages(),
     zip_safe = True,
     install_requires = [
