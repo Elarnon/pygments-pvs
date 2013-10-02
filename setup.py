@@ -1,15 +1,20 @@
 #!/usr/bin/python
 
 from setuptools import setup, find_packages
+
+archive = 'https://github.com/Elarnon/pygments-pvs/archive/'
+version = '0.1'
+
 setup(
     name = 'pygments-pvs',
-    version = '0.1',
+    version = version,
     description = 'Pygments lexer for PVS source files',
     long_description = open('README.rst').read(),
     license = 'MIT',
     author = 'Basile Clement',
     author_email = 'basile@clement.pm',
     url = 'https://github.com/Elarnon/pygments-pvs',
+    download_url = archive + version + '.tar.gz',
     packages = find_packages(),
     zip_safe = True,
     install_requires = [
