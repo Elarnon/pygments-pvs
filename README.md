@@ -18,13 +18,14 @@ You can then use the ``pvs`` lexer with Pygments:
 Installation
 ------------
 
-The preferred way to install pygments-pvs is by using pip.
+The preferred way to install pygments-pvs is by using pip. This can be
+done by installing pygments-pvs from the PyPI repository, or directly
+from the source. In both case, the commands install pygments-pvs for
+the local user only - if you want to install it system-wide, simply
+remove the `--user` flag and start the command as root (using `su` or
+`sudo`).
 
-Global installation using pip (can require root privileges):
-
-    $ pip install pygments-pvs
-
-User installation using pip:
+Installing from the PyPI repository:
 
     $ pip install pygments-pvs --user
 
