@@ -3,7 +3,7 @@
 from setuptools import setup, find_packages
 
 archive = 'https://github.com/Elarnon/pygments-pvs/archive/'
-version = '0.1.1'
+version = '0.2-alpha'
 
 setup(
     name = 'pygments-pvs',
