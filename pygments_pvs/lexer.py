@@ -75,7 +75,7 @@ class PVSLexer(RegexLexer):
         'TRUE', 'FALSE', 'PROJ_\d+', 'IN_\d+\??', 'OUT_\d+',
     ]
 
-    ident = '[a-zA-Z0-9_?]+'
+    ident = r'[^][\s:.(){}`;|#]+'
 
     tokens = {
         'whitespace': [
@@ -93,7 +93,7 @@ class PVSLexer(RegexLexer):
             (r'\d+', Number.Integer),
             (r'(?i)\b(%s)\b' % '|'.join(word_operators), Operator.Word),
             (operators, Operator),
-            (r'[%s]' % ''.join(uoperators), Operator),
+            (r'\b%s\b' % '|'.join(uoperators), Operator),
             (r'->|[:,`;§]|[\[(]#?|#?[\])]|[({]:?|:?[})]|[({\[]\||\|[)}\]]|{{|}}|\|', Punctuation),
             (r'"', String.Double, 'string'),
             (r'\b' + ident + r'(?=' + ws + '\.)', Name.Namespace),
