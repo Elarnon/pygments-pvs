@@ -56,4 +56,4 @@ To verify the installation, run
 Using in LaTeX documents
 ========================
 
-See the minted package at http://minted.googlecode.com
+See the minted package at https://github.com/gpoore/minted
