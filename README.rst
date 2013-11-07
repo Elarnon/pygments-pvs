@@ -30,13 +30,13 @@ the local user only - if you want to install it system-wide, simply
 remove the ``--user`` flag and start the command as root (using ``su`` or
 ``sudo``).
 
-Installing from the PyPI repository:
+Installing from the PyPI repository (slightly older version, more stable):
 
 .. code-block:: bash
 
     $ pip install pygments-pvs --user
 
-Installing directly from GitHub:
+Installing directly from GitHub (most recent version, can have more bugs):
 
 .. code-block:: bash
 
